@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, Suspense, useEffect, useState } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+const HomePage = React.lazy(() => import("./containers/HomePage"));
+const DetailPage = React.lazy(() => import("./containers/ProjectDetail"));
+export const DataContext = createContext<any>(null);
 
 function App() {
+  const [state, setState] = useState(null);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/resumeData.json`)
+      .then((data) => data.json())
+      .then((res) => {
+        setState(res);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <DataContext.Provider value={state}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/detail/:id" component={DetailPage} />
+          </Switch>
+        </Suspense>
+      </DataContext.Provider>
+    </BrowserRouter>
   );
 }
 

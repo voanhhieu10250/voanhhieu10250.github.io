@@ -1,0 +1,56 @@
+#home {
+  background-size: cover;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: #161415;
+  background-position: center top;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#home .banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  .title {
+    font-size: 90px;
+    color: #fff;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgb(0, 0, 0 / 80%);
+    font-weight: bold;
+    @include lg-screen {
+      font-size: 78px;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    @include md-screen {
+      font-size: 68px;
+      letter-spacing: -1px;
+      line-height: 75px;
+    }
+    @include sm-screen {
+      font-size: 68px;
+    }
+  }
+  .description {
+    font-size: 18px;
+    color: #a8a8a8;
+    margin: 0;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0 / 50%);
+  }
+  .socialBox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    a.link {
+      color: #fff;
+      margin: 0 15px;
+      font-size: 30px;
+    }
+  }
+}
