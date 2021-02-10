@@ -1,6 +1,10 @@
 @import "./variable";
 
-@import "./navbar";
-
 // HOME PAGE
+@import "./HomePage/navbar";
 @import "./HomePage/header";
+@import "./HomePage/about";
+@import "./HomePage/resume";
+@import "./HomePage/projects";
+@import "./HomePage/contact";
+@import "./HomePage/footer";

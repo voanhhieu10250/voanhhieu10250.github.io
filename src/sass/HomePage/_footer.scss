@@ -1,0 +1,39 @@
+footer {
+  padding: 48px 0;
+  color: #303030;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  background-color: #0f0f0f;
+  .goUpIcon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    color: #525252;
+    font-size: 42px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: #11abb0;
+    }
+  }
+  a {
+    color: #888;
+    text-decoration: none;
+    &:hover {
+      color: #686868;
+      transition: all 0.2s ease-in-out;
+    }
+    span {
+      color: #484848;
+    }
+  }
+}

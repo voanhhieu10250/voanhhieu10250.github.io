@@ -1,0 +1,30 @@
+#contact {
+  background: #191919;
+  padding-top: 96px;
+  padding-bottom: 102px;
+  color: #636363;
+  .row {
+    @include row;
+    width: 40%;
+    @include sm-screen {
+      width: 90%;
+    }
+    i {
+      font-size: 20px;
+    }
+    .section_head i,
+    .section_head p {
+      color: #fff;
+      font-size: 50px;
+    }
+    .description {
+      font-size: 20px;
+    }
+    .contact_link {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+}

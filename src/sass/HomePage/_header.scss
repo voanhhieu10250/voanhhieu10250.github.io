@@ -6,9 +6,26 @@
   background-repeat: no-repeat;
   background-color: #161415;
   background-position: center top;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   position: relative;
+  .scrollDownBtn {
+    position: absolute;
+    font-size: 42px;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    color: #fff;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &:hover {
+      color: #11abb0;
+    }
+  }
 }
 #home .banner {
   position: absolute;
@@ -51,6 +68,10 @@
       color: #fff;
       margin: 0 15px;
       font-size: 30px;
+      transition: 0.2s all ease-in;
+      &:hover {
+        color: #11abb0;
+      }
     }
   }
 }

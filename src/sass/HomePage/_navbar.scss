@@ -1,0 +1,57 @@
+#nav-wrap {
+  font-size: 14px;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  letter-spacing: 2.5px;
+  z-index: 100;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: 0.5s background-color linear;
+  &.bgChange {
+    background-color: #808080eb;
+  }
+  @include sm-screen {
+    background-color: #808080eb;
+  }
+}
+.nav-btn {
+  color: #fff;
+  cursor: pointer;
+  &:hover.nav-btn {
+    color: #f06000;
+  }
+}
+.activeClass.nav-btn {
+  color: #f06000;
+  &:hover {
+    color: #f06000;
+  }
+}
+.dropdown-menu .dropdown_link {
+  transition: 0.1s background-color ease;
+  &:hover {
+    background-color: #c9ccd0;
+  }
+}
+.navbar-toggler {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  &.navbar-toggler:focus {
+    box-shadow: none;
+  }
+  &::after {
+    content: "";
+    left: 0;
+    top: 0.1em;
+    width: 100%;
+    height: 0.1em;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff;
+  }
+}

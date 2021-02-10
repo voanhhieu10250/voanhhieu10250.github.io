@@ -1,0 +1,82 @@
+#resume {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    @include sm-screen {
+      text-align: center;
+    }
+    span {
+      padding-bottom: 4px;
+      border-bottom: 3px solid #11abb0;
+    }
+  }
+
+  .row {
+    @include row;
+  }
+  .education,
+  .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .skills .bars {
+    width: 90%;
+    text-align: left;
+    padding: 0;
+    padding-top: 25px;
+    margin-top: 50px;
+    max-width: 650px;
+    overflow-y: scroll;
+    @include sm-screen {
+      width: 100%;
+    }
+    li {
+      list-style: none;
+      background: #ccc;
+      height: 42px;
+      position: relative;
+      margin-bottom: 60px;
+      p {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        color: #313131;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+      }
+      span {
+        background: #313131;
+        height: 42px;
+        line-height: 42px;
+        display: inline-block;
+      }
+    }
+  }
+  .rowItem {
+    width: 100%;
+    padding: 0 20px;
+    h3 {
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      font-style: italic;
+      color: #6e7881;
+      margin: 9px 0 18px 0;
+      span {
+        font-style: normal;
+      }
+    }
+  }
+}
