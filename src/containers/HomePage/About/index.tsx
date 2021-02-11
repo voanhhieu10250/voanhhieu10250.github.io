@@ -1,12 +1,10 @@
 import React from "react";
 import { Element } from "react-scroll";
-import publicURL from "../../../helper/publicUrl";
 
 interface Props {
-  name: string;
   resumedownload: string;
-  bio: string;
-  contactmessage: string;
+  name: string;
+  bio: string[];
   email: string;
   phone: string;
   address: {
@@ -21,18 +19,15 @@ const About: React.FC<{ data: Props | null }> = ({ data }) => {
     <section id="about">
       <Element name="about">
         <div className="row">
-          <div className="col-3 d-none d-md-block">
-            <img
-              src={publicURL("profile-pic.jpg")}
-              alt="profile picture"
-              className="avatar"
-            />
-          </div>
-          <div className="col-sm-12 col-md-9">
+          <div className="col-md-8 col-sm-12">
             <h2>About Me</h2>
-            <p>{data?.bio}</p>
+            {data?.bio.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </div>
+          <div className="col-md-4 col-sm-12">
             <div className="row m-0">
-              <div className="col-sm-12 col-md-5 p-0">
+              <div className="col-12 p-0">
                 <h2>Contact Details</h2>
                 <p className="address">
                   <span>{data?.name}</span>
@@ -40,7 +35,7 @@ const About: React.FC<{ data: Props | null }> = ({ data }) => {
                   <span>{data?.address.country}</span>
                   <br />
                   <span>
-                    {data?.address.city},{data?.address.zip}
+                    {data?.address.city}, {data?.address.zip}
                   </span>
                   <br />
                   <span>{data?.phone}</span>
@@ -48,10 +43,10 @@ const About: React.FC<{ data: Props | null }> = ({ data }) => {
                   <span>{data?.email}</span>
                 </p>
               </div>
-              <div className="col-sm-12 col-md-7 p-0">
+              <div className="col-12 p-0">
                 <a
                   className="btn downloadBtn"
-                  href={`${process.env.PUBLIC_URL}/Resume.pdf`}
+                  href={data?.resumedownload}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

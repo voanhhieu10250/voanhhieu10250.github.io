@@ -1,0 +1,74 @@
+.article {
+  font-size: 1.1rem;
+  margin: 0rem 2rem;
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: transparent;
+    border: none;
+  }
+}
+.article_header {
+  margin-bottom: 10px;
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+  }
+  h6 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: normal;
+  }
+  .githubLink {
+    margin-right: 0.6rem;
+    .link {
+      @include socialLink;
+      color: #7c90ff;
+      margin: 0;
+      display: block;
+      line-height: normal;
+    }
+  }
+  .badge_list {
+    list-style: none;
+    width: 100%;
+    ul {
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 1rem 0 0;
+    }
+    li {
+      color: #a0c5e7;
+      background-color: #2b2c2f;
+      border-radius: 10px;
+      font-size: 14px;
+      padding: 0.2rem 0.5rem;
+      margin: 0 0.2rem;
+      transition: 500ms ease;
+      white-space: nowrap;
+      list-style: none;
+    }
+  }
+}
+.article_body {
+  #carouselImage {
+    border-radius: 10px;
+    display: inline;
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    max-height: 300px;
+    max-width: 530px;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.5s ease;
+  }
+  h4 {
+    font-size: 1.9rem;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

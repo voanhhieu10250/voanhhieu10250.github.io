@@ -17,7 +17,7 @@ const Projects: React.FC<Props | null> = ({ data, bonusInfo }) => {
     <section id="projects">
       <Element name="project">
         <div className="list_project">
-          <h1>Check Out Some of My Projects.</h1>
+          <h1>Projects</h1>
           <div className="d-flex flex-wrap wrapper">
             {data?.map((item, index) => (
               <div className="project_item" key={index}>
@@ -25,8 +25,8 @@ const Projects: React.FC<Props | null> = ({ data, bonusInfo }) => {
                   <Link to={`/detail/${item.id}`} title={item.title}>
                     <img src={publicURL(item.image)} alt={item.title} />
                     <div className="overlay">
-                      <h5>{item.title}</h5>
                       <div className="link_icon">
+                        <h5>{item.title}</h5>
                         <i className="fas fa-link"></i>
                       </div>
                     </div>
@@ -36,14 +36,7 @@ const Projects: React.FC<Props | null> = ({ data, bonusInfo }) => {
             ))}
           </div>
         </div>
-        <div
-          className="bonusInfo"
-          style={{
-            backgroundImage: `linear-gradient(0deg, #000000bd 0%,#000000bd 10%), url(${publicURL(
-              "patrick-hendry.jpg"
-            )})`,
-          }}
-        >
+        <div className="bonusInfo">
           <div className="blur"></div>
           <div className="text_container">
             <div className="row text_row">

@@ -4,8 +4,8 @@ import About from "./About";
 import Resume from "./Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { DataContext } from "../../App";
 
 const HomePage: React.FC = () => {

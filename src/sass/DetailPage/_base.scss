@@ -1,0 +1,61 @@
+.base {
+  margin: 0;
+  padding: 0;
+  color: $text-color-1;
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  background-color: $bg-color-default;
+  .header {
+    background-color: $bg-color-lighten;
+  }
+  .topnav {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 8vh;
+    padding: 0.7rem 2rem 1rem 2rem;
+  }
+  .logo_link {
+    color: $text-color-2;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    a {
+      color: inherit;
+      transition: 0.3s;
+      text-decoration: none;
+      display: block;
+      line-height: normal;
+      &:hover {
+        color: $hover-color-default;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .footer {
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+    padding: 1rem 2rem;
+    display: flex;
+    background-color: $bg-color-lighten;
+    .footer_group {
+      align-items: center;
+      margin: 0 0.8rem;
+      .link {
+        @include socialLink;
+      }
+      p {
+        margin: 0;
+        color: #484848;
+        padding: 12px;
+      }
+      span {
+        color: #888;
+      }
+    }
+  }
+}

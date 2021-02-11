@@ -1,8 +1,9 @@
 #resume {
-  background: #fff;
+  background: $bg-color-darken;
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
+  color: $text-color-0;
   h1 {
     font-size: 18px;
     font-weight: bold;
@@ -13,7 +14,7 @@
     }
     span {
       padding-bottom: 4px;
-      border-bottom: 3px solid #11abb0;
+      border-bottom: 3px solid $hover-color-1;
     }
   }
 
@@ -33,16 +34,19 @@
     padding-top: 25px;
     margin-top: 50px;
     max-width: 650px;
+    max-height: 600px;
     overflow-y: scroll;
     @include sm-screen {
       width: 100%;
+      max-height: 400px;
     }
     li {
       list-style: none;
-      background: #ccc;
+      background: #313131;
       height: 42px;
       position: relative;
       margin-bottom: 60px;
+      margin-right: 20px;
       p {
         position: absolute;
         top: -30px;
@@ -50,13 +54,13 @@
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
-        color: #313131;
+        color: $text-color-2;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin: 0;
       }
       span {
-        background: #313131;
+        background: #7d7b7b;
         height: 42px;
         line-height: 42px;
         display: inline-block;
@@ -72,7 +76,7 @@
     p {
       font-size: 18px;
       font-style: italic;
-      color: #6e7881;
+      color: $text-color-4;
       margin: 9px 0 18px 0;
       span {
         font-style: normal;

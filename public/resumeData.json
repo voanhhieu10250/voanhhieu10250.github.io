@@ -2,8 +2,13 @@
   "home": {
     "navbar": ["home", "about", "resume", "project", "contact"],
     "main": {
-      "name": "Sonny Sangha",
-      "description": "I eat, sleep and breathe React",
+      "picture": "profile-pic.jpg",
+      "name": "Vo Anh Hieu",
+      "description": [
+        "Hi, my name is Vo Anh Hieu.",
+        "I'm currently a 2nd year student studying Software Engineering at FPT University.",
+        "I love learning new technologies and building valuable application that helps others with their work."
+      ],
       "social": [
         {
           "name": "facebook",
@@ -24,65 +29,99 @@
           "name": "github",
           "url": "https://github.com/voanhhieu10250",
           "className": "fab fa-github"
+        },
+        {
+          "name": "pdf",
+          "url": "/Resume.pdf",
+          "className": "fas fa-file-pdf"
         }
       ]
     },
     "about": {
-      "name": "Sonny Sangha",
-      "resumedownload": "http://papareact.com",
-      "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-      "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-      "email": "papareact.team@gmail.com",
-      "phone": "+44 1234567899",
+      "name": "Vo Anh Hieu",
+      "resumedownload": "/Resume.pdf",
+      "bio": [
+        "I'm a front-end developer with 1 year experience in building web application (ReactJS), with good lnowledge of Reactive Programming.",
+        "I love learning new technologies and building valuable application that helps others with their work.",
+        "Ability to work independently, but I consider my self is a team-player because I tend to work well within a group."
+      ],
+      "email": "voanhhieu10250@gmail.com",
+      "phone": "0974 155 013",
       "address": {
-        "city": "London",
-        "country": "Devosphere",
-        "zip": "W3B D3V"
+        "city": "Ho Chi Minh City",
+        "country": "Viet Nam",
+        "zip": "73000"
       }
     },
     "resume": {
       "skillmessage": "My Programming Language Proficiency",
       "education": [
         {
-          "school": "University of Kent - UK",
-          "degree": "Bachelor's Degree, Computer Science",
-          "graduated": "July 2016",
-          "description": "Graduated with First Class Honours"
+          "school": "CyberSoft Academy - VN",
+          "degree": "Certificate of completion, Frond end developer",
+          "graduated": "Feb 2021",
+          "description": "I'm still waiting for the certificate."
+        },
+        {
+          "school": "FPT University HCM - VN",
+          "degree": "Bachelor's Degree, Software Engineering",
+          "graduated": "Not yet",
+          "description": "I'm in my second year."
         }
       ],
       "work": [],
       "skills": [
         {
           "name": "ReactJs",
-          "level": "100%"
-        },
-        {
-          "name": "Python",
           "level": "85%"
         },
         {
-          "name": "Git",
+          "name": "JavaScript",
+          "level": "83%"
+        },
+        {
+          "name": "TypeScript",
           "level": "70%"
         },
         {
-          "name": "JavaScript",
-          "level": "99%"
+          "name": "NodeJs",
+          "level": "60%"
         },
         {
-          "name": "Web Development",
-          "level": "95%"
+          "name": "RESTful API",
+          "level": "80%"
+        },
+        {
+          "name": "Git",
+          "level": "60%"
+        },
+        {
+          "name": "VueJS",
+          "level": "60%"
+        },
+        {
+          "name": "Express",
+          "level": "67%"
+        },
+        {
+          "name": "MongoDB",
+          "level": "65%"
+        },
+        {
+          "name": "NoSQL",
+          "level": "60%"
         }
       ]
     },
     "project": [
       {
         "title": "Tix.vn Clone (React JS)",
-        "image": "projects/ag.png",
+        "image": "projects/tix-1.jpg",
         "id": "tixclone"
       },
       {
-        "title": "My Resume Website (React JS)",
-        "image": "projects/ag.png",
+        "title": "Personal Website (React JS)",
+        "image": "projects/personal-web1.jpg",
         "id": "resume"
       }
     ],
@@ -92,7 +131,7 @@
       "I read lots of books. And my favorite is “So Good They Can’t Ignore You – Cal Newport”"
     ],
     "contact": {
-      "email": "voanhhieu10250@gmail.com",
+      "email": "mailto:voanhhieu10250@gmail.com",
       "linkedin": "https://www.linkedin.com/in/hieu-vo-anh-51a174206/",
       "fb": "https://www.facebook.com/Hr106.goodkid/",
       "twitter": "https://twitter.com/VAnhHiu4",
@@ -100,7 +139,95 @@
     }
   },
   "detail": {
-    "tixclone": {},
-    "resume": {}
+    "footer": [
+      {
+        "url": "mailto:voanhhieu10250@gmail.com",
+        "className": "fas fa-envelope"
+      },
+      {
+        "url": "https://www.facebook.com/Hr106.goodkid/",
+        "className": "fab fa-facebook-f"
+      },
+      {
+        "url": "https://www.linkedin.com/in/hieu-vo-anh-51a174206/",
+        "className": "fab fa-linkedin-in"
+      },
+      {
+        "url": "https://www.instagram.com/h_rom106/",
+        "className": "fab fa-instagram"
+      },
+      {
+        "url": "https://github.com/voanhhieu10250",
+        "className": "fab fa-github"
+      }
+    ],
+    "tixclone": {
+      "source": "https://github.com/voanhhieu10250/DuAnCuoiKhoaFE52",
+      "title": "Tix.vn Clone",
+      "description": "My Personal Website, React.js, Sass, Styled Components",
+      "tech": [
+        "Javascript",
+        "React",
+        "Axios",
+        "Redux",
+        "Redux-thunk",
+        "React Hooks",
+        "Sass",
+        "Bootstrap",
+        "Material UI",
+        "npm"
+      ],
+      "pictures": [
+        "projects/tix-1.jpg",
+        "projects/tix-3.jpg",
+        "projects/tix-4.jpg",
+        "projects/tix-5.jpg",
+        "projects/tix-6.jpg",
+        "projects/tix-7.jpg",
+        "projects/tix-2.jpg"
+      ],
+      "content": [
+        {
+          "header": "Background",
+          "text": "This is my first big project I've ever made since I got into this industry. CyberSoft (the academy where I learnd to code) gave me some backend APIs, so I didn't have to pay much attention to the backend (but sometimes I had to use mockAPI.io for some part that did't have any API link for it). Because it is the first time I build a large website like this, by my self (only me participated in this project), it took me nearly 2 months to complete it (eat and sleep with it). I had tried lots of CSS frameworks, the more I research the more I confured because of the variety of CSS frameworks. And so far I decided to stick with SASS and Styled-Components. These two frameworks are very powerful and easy to use. Some of the most difficult parts I faced along the way is customization and responsiveness. When I finished the homepage, I realized that I hadn't checked its layout on different size screens. So I had to rebuild it all again, it's a pain in the a**. When there was only 2 days left before the deadline, I had to customize all the code that I wrote. I have to be honest with you that I sometimes don't understand the code that I had written, so after that time I noted a lot above the code that I wrote and tried to code as clear as possible."
+        },
+        {
+          "header": "Conclusion",
+          "text": "Overall, I am very proud of this project. I also really enjoyed programming in React (especially React Hooks system). With the rise of other Componies using React as well as NextJS, I will definitely use it for most of my future projects."
+        }
+      ]
+    },
+    "resume": {
+      "source": "https://voanhhieu10250.github.io",
+      "title": "Website",
+      "description": "My Personal Website, React.js, Sass",
+      "tech": [
+        "Typescript",
+        "React",
+        "React Hooks",
+        "Sass",
+        "Bootstrap",
+        "npm"
+      ],
+      "pictures": ["projects/personal-web1.jpg", "projects/personal-web2.jpg"],
+      "content": [
+        {
+          "header": "",
+          "text": "This is the project for my parsonal website."
+        },
+        {
+          "header": "",
+          "text": "Originally, I planned to write it using just HTML/CSS/JS. But after doing some research, I realized that being able to create React applications with Typescript are very important and useful. So I learned Typescript and apply it with React to build this project."
+        },
+        {
+          "header": "",
+          "text": "One of the challenges I faced was designing the website to be easy to navigate as well as appealing to users. Design is not something I had prior industry experience with so I had to do some research into designing user-friendly and intuitive interfaces."
+        },
+        {
+          "header": "",
+          "text": "Another challenge was the overly complicated typing system of Typescript, but it's benefits are very attractive once I get used to it (code completion, type checking,...). It prevent me from getting any potential errors, which is so nice. I think from now on I will use Typescript instead of Javascript for React"
+        }
+      ]
+    }
   }
 }

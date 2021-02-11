@@ -10,8 +10,9 @@ interface Social {
 
 interface Props {
   data: {
+    picture: string;
     name: string;
-    description: string;
+    description: string[];
     social: Social[];
   };
 }
@@ -23,14 +24,25 @@ const Header: React.FC<Props | null> = ({ data }) => {
         name="home"
         id="home"
         style={{
-          backgroundImage: `url(${publicURL("header-background.jpg")})`,
+          backgroundImage: `linear-gradient(0deg,#000, rgba(0, 0, 0, 0.74) ),url(${publicURL(
+            "header-background.jpg"
+          )})`,
         }}
       >
-        <div className="row banner">
-          <div className="col banner_wrapper">
-            <p className="title">I'm {data?.name}</p>
-            <p className="description">{data?.description}</p>
-            <div className="socialBox">
+        <div className="row banner text-md-start text-center">
+          <div className="d-lg-block d-none col-3">
+            <img src={publicURL(data?.picture)} alt="picture of me" />
+          </div>
+          <div className="col-lg-9 col-sm-12 banner_wrapper">
+            <p className="title">{data?.name}</p>
+            {data?.description.map((item, index) => (
+              <p className="description" key={index}>
+                {item}
+              </p>
+            ))}
+            <br />
+            <p className="description">Feel free to look around!</p>
+            <div className="socialBox justify-content-md-start justify-content-center">
               {data?.social.map((item, index) => {
                 return (
                   <a
@@ -50,7 +62,12 @@ const Header: React.FC<Props | null> = ({ data }) => {
         <button
           className="btn scrollDownBtn"
           onClick={() => {
-            window.scrollTo(0, window.screen.availHeight - 140);
+            window.scrollTo(
+              0,
+              window.screen.availHeight > 770
+                ? 730
+                : window.screen.availHeight - 140
+            );
           }}
         >
           <i className="fas fa-chevron-circle-down"></i>

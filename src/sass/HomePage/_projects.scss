@@ -1,24 +1,27 @@
 #projects {
-  background: #ebeeee;
+  background: $bg-color-lighten;
   .list_project {
-    @include row;
+    padding: 20px 3rem 0;
+    width: 100%;
     h1 {
       text-align: center;
-      font-size: 15px;
+      font-size: 30px;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 48px;
-      color: #95a3a3;
+      color: $text-color-0;
     }
   }
   .project_item {
     margin-bottom: 36px;
     padding: 0 20px;
-    width: 25%;
+    width: 33.33%;
+
     @include sm-screen {
       width: 100%;
     }
     .item {
+      border-radius: 8px;
       background: #fff;
       overflow: hidden;
       position: relative;
@@ -45,18 +48,18 @@
       &:hover {
         opacity: 1;
       }
-      h5 {
-        padding: 18px;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 0;
-      }
-      @include sm-screen {
-        .link_icon {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+      .link_icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        padding: 0 22px;
+        h5 {
+          font-weight: bold;
+          font-size: 24px;
+          margin: 0;
         }
       }
     }

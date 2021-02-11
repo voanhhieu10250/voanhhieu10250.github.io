@@ -1,3 +1,17 @@
+$bg-color-default: #232326;
+$bg-color-lighten: #2b2c2f;
+$bg-color-darken: #191919;
+$bg-color-1: #0f0f0f;
+$text-color-0: #ffffff;
+$text-color-1: #ececec;
+$text-color-2: #f0f0f0;
+$text-color-3: #a8a8a8;
+$text-color-4: #6e7881;
+$text-color-5: #525252;
+$text-color-6: #303030;
+$hover-color-default: #7c90ff;
+$hover-color-1: #11abb0;
+
 @mixin sm-screen {
   @media screen and (max-width: 767px) {
     @content;
@@ -17,4 +31,13 @@
   width: 96%;
   margin: 0 auto;
   max-width: 1020px;
+}
+@mixin socialLink {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 30px;
+  transition: 0.2s all ease-in;
+  &:hover {
+    color: #11abb0;
+  }
 }

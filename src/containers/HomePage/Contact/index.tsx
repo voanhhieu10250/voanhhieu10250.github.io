@@ -32,7 +32,9 @@ const Contact: React.FC<Props | null> = ({ data }) => {
             <i className="far fa-envelope"></i>
           </div>
           <div className="col-md-10 col-sm-12">
-            <p className="contact_link">{data?.email}</p>
+            <a href={data?.email} className="contact_link">
+              {data?.email.slice(data.email.indexOf(":") + 1)}
+            </a>
           </div>
         </div>
         <div className="row">

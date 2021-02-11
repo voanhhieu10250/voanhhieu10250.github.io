@@ -1,17 +1,17 @@
 footer {
   padding: 48px 0;
-  color: #303030;
+  color: $text-color-6;
   font-size: 14px;
   text-align: center;
   position: relative;
-  background-color: #0f0f0f;
+  background-color: $bg-color-1;
   .goUpIcon {
     position: absolute;
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.2s ease-in-out;
-    color: #525252;
+    color: $text-color-5;
     font-size: 42px;
     border: none;
     background-color: transparent;
@@ -22,7 +22,7 @@ footer {
       outline: none;
     }
     &:hover {
-      color: #11abb0;
+      color: $hover-color-1;
     }
   }
   a {
