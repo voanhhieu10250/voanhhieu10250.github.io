@@ -65,9 +65,17 @@ const Header: React.FC<Props | null> = ({ data }) => {
               <p className="title">{data?.name}</p>
             )}
             {data?.description.map((item, index) => (
-              <p className="description" key={index}>
-                {item}
-              </p>
+              <>
+                <p
+                  className={`description${
+                    phoneScreen && index !== 0 ? " text-start" : ""
+                  }`}
+                  key={index}
+                >
+                  {item}
+                </p>
+                {phoneScreen && index === 0 ? <br /> : ""}
+              </>
             ))}
             <br />
             <p className="description">Feel free to look around!</p>
