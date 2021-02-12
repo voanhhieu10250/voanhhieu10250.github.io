@@ -225,7 +225,7 @@
         },
         {
           "header": "",
-          "text": "Another challenge was the overly complicated typing system of Typescript, but it's benefits are very attractive once I get used to it (code completion, type checking,...). It prevent me from getting any potential errors, which is so nice. I think from now on I will use Typescript instead of Javascript for React"
+          "text": "Another challenge was the overly complicated typing system of Typescript, but its benefits are very attractive once I get used to it (code completion, type checking,...). It prevents me from getting any potential errors, which is so nice. I think from now on I will use Typescript instead of Javascript for React"
         }
       ]
     }
