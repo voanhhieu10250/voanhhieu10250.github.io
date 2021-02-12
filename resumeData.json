@@ -126,16 +126,16 @@
       }
     ],
     "bonusInfo": [
-      "I love learning new technologies through Internet (Google and Youtube are my good friends). I’m planning on learning NextJS, this framework is pretty cool, being used by many big companies and more importantly I think SSR is the future of React.",
+      "I’m planning on learning NextJS, this framework is pretty cool, being used by many big companies. I think SSR and WASM is the future of web development.",
       "I just started learning Japanese (self-study), I hope one day I can become a bridge engineer.",
       "I read lots of books. And my favorite is “So Good They Can’t Ignore You – Cal Newport”"
     ],
     "contact": {
       "email": "mailto:voanhhieu10250@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/hieu-vo-anh-51a174206/",
-      "fb": "https://www.facebook.com/Hr106.goodkid/",
+      "linkedin": "https://linkedin.com/in/hieu-vo-anh-51a174206/",
+      "fb": "https://facebook.com/Hr106.goodkid/",
       "twitter": "https://twitter.com/VAnhHiu4",
-      "instag": "https://www.instagram.com/h_rom106/"
+      "instag": "https://instagram.com/h_rom106/"
     }
   },
   "detail": {
@@ -198,7 +198,7 @@
       ]
     },
     "resume": {
-      "source": "https://voanhhieu10250.github.io",
+      "source": "https://github.com/voanhhieu10250/voanhhieu10250.github.io",
       "title": "Website",
       "description": "My Personal Website, React.js, Sass",
       "tech": [
