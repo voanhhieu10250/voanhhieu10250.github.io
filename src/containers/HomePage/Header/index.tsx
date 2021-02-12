@@ -1,5 +1,7 @@
-import React from "react";
+import { bottom } from "@popperjs/core";
+import React, { useContext } from "react";
 import { Element } from "react-scroll";
+import { ScreenContext } from "../../../App";
 import publicURL from "../../../helper/publicUrl";
 
 interface Social {
@@ -18,23 +20,50 @@ interface Props {
 }
 
 const Header: React.FC<Props | null> = ({ data }) => {
+  const phoneScreen = useContext(ScreenContext);
+
   return (
     <main>
       <Element
         name="home"
         id="home"
-        style={{
-          backgroundImage: `linear-gradient(0deg,#000, rgba(0, 0, 0, 0.74) ),url(${publicURL(
-            "header-background.jpg"
-          )})`,
-        }}
+        style={
+          !phoneScreen
+            ? {
+                backgroundImage: `linear-gradient(0deg,#000, rgba(0, 0, 0, 0.74) ),url(${publicURL(
+                  "header-background.jpg"
+                )})`,
+              }
+            : { backgroundColor: "transparent", height: "max-content" }
+        }
       >
-        <div className="row banner text-md-start text-center">
+        <div
+          className="row banner text-md-start text-center"
+          style={
+            phoneScreen
+              ? {
+                  position: "unset",
+                  transform: "unset",
+                  width: "100%",
+                  margin: 0,
+                  marginBlock: 40,
+                }
+              : {}
+          }
+        >
           <div className="d-lg-block d-none col-3">
             <img src={publicURL(data?.picture)} alt="picture of me" />
           </div>
           <div className="col-lg-9 col-sm-12 banner_wrapper">
-            <p className="title">{data?.name}</p>
+            {phoneScreen ? (
+              <img
+                src={publicURL(data?.picture)}
+                style={{ margin: 0, marginBottom: 10 }}
+                alt="picture of me"
+              />
+            ) : (
+              <p className="title">{data?.name}</p>
+            )}
             {data?.description.map((item, index) => (
               <p className="description" key={index}>
                 {item}
@@ -60,6 +89,7 @@ const Header: React.FC<Props | null> = ({ data }) => {
           </div>
         </div>
         <button
+          hidden={phoneScreen}
           className="btn scrollDownBtn"
           onClick={() => {
             window.scrollTo(

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Element } from "react-scroll";
+import { ScreenContext } from "../../../App";
 
 interface Props {
   data: {
@@ -12,13 +13,16 @@ interface Props {
 }
 
 const Contact: React.FC<Props | null> = ({ data }) => {
+  const phoneScreen = useContext(ScreenContext);
   return (
     <section id="contact">
       <Element name="contact">
         <div className="row">
           <div className="col-md-2 col-sm-12 section_head">
             <i className="fas fa-envelope d-md-block d-none"></i>
-            <p className="d-md-none d-block">Get in touch</p>
+            <p className={`d-md-none${phoneScreen ? " d-none" : " d-block"}`}>
+              Get in touch
+            </p>
           </div>
           <div className="col-md-10 col-sm-12">
             <p className="description">

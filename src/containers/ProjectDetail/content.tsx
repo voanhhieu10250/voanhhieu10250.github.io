@@ -47,19 +47,6 @@ const Content: React.FC<Props> = ({ data }) => {
           data-bs-pause="false"
           data-bs-interval="2000"
         >
-          <div className="carousel-indicators">
-            {data?.pictures.map((_, index) => (
-              <button
-                type="button"
-                data-bs-target="#carouselImage"
-                data-bs-slide-to={index}
-                className={index === 0 ? "active" : ""}
-                aria-current={index === 0 ? "true" : "false"}
-                aria-label={`Slide ${index + 1}`}
-                key={index}
-              />
-            ))}
-          </div>
           <div className="carousel-inner">
             {data?.pictures.map((item, index) => (
               <div

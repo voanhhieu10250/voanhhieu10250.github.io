@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { ScreenContext } from "../../../App";
 
 interface Props {
   data: string[] | null;
@@ -7,15 +8,16 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ data }) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
-  console.log("object");
+  const phoneScreen = useContext(ScreenContext);
+
   useEffect(() => {
     const scrolling = () => {
       if (window.scrollY > window.screen.availHeight / 2) setScrolled(true);
       else setScrolled(false);
     };
-    window.addEventListener("scroll", scrolling);
+    if (!phoneScreen) window.addEventListener("scroll", scrolling);
     return () => {
-      window.removeEventListener("scroll", scrolling);
+      if (!phoneScreen) window.removeEventListener("scroll", scrolling);
     };
   }, []);
 
@@ -41,6 +43,7 @@ const Navbar: React.FC<Props> = ({ data }) => {
     else return [];
   };
 
+  if (phoneScreen) return <div></div>;
   return (
     <nav
       id="nav-wrap"

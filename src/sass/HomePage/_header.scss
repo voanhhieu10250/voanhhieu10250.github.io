@@ -18,6 +18,9 @@
     transform: translateX(-50%);
     border: none;
     color: $text-color-0;
+    @media screen and (max-height: 570px) {
+      display: none;
+    }
     &:focus {
       outline: none;
       box-shadow: none;

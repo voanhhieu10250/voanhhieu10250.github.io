@@ -1,6 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
+import { ScreenContext } from "../../../App";
 import publicURL from "../../../helper/publicUrl";
 
 interface Props {
@@ -13,10 +14,15 @@ interface Props {
 }
 
 const Projects: React.FC<Props | null> = ({ data, bonusInfo }) => {
+  const phoneScreen = useContext(ScreenContext);
+
   return (
     <section id="projects">
       <Element name="project">
-        <div className="list_project">
+        <div
+          className="list_project"
+          style={phoneScreen ? { paddingInline: 0 } : {}}
+        >
           <h1>Projects</h1>
           <div className="d-flex flex-wrap wrapper">
             {data?.map((item, index) => (

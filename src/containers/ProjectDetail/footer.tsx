@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ScreenContext } from "../../App";
 
 type Data =
   | {
@@ -12,9 +13,14 @@ interface Props {
 }
 
 const Footer: React.FC<Props> = ({ data }) => {
+  const phoneScreen = useContext(ScreenContext);
+
   return (
-    <footer className="footer">
-      <div className="footer_group">
+    <footer
+      className="footer"
+      style={phoneScreen ? { justifyContent: "center" } : {}}
+    >
+      <div className="footer_group" hidden={phoneScreen}>
         {data?.map((item, index) => {
           return (
             <a
