@@ -11,19 +11,9 @@
       ],
       "social": [
         {
-          "name": "facebook",
-          "url": "https://www.facebook.com/Hr106.goodkid/",
-          "className": "fab fa-facebook-f"
-        },
-        {
           "name": "linkedin",
           "url": "https://www.linkedin.com/in/hieu-vo-anh-51a174206/",
           "className": "fab fa-linkedin-in"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com/h_rom106/",
-          "className": "fab fa-instagram"
         },
         {
           "name": "github",
@@ -133,7 +123,6 @@
     "contact": {
       "email": "mailto:voanhhieu10250@gmail.com",
       "linkedin": "https://linkedin.com/in/hieu-vo-anh-51a174206/",
-      "fb": "https://facebook.com/Hr106.goodkid/",
       "twitter": "https://twitter.com/VAnhHiu4",
       "instag": "https://instagram.com/h_rom106/"
     }
@@ -145,16 +134,8 @@
         "className": "fas fa-envelope"
       },
       {
-        "url": "https://www.facebook.com/Hr106.goodkid/",
-        "className": "fab fa-facebook-f"
-      },
-      {
         "url": "https://www.linkedin.com/in/hieu-vo-anh-51a174206/",
         "className": "fab fa-linkedin-in"
-      },
-      {
-        "url": "https://www.instagram.com/h_rom106/",
-        "className": "fab fa-instagram"
       },
       {
         "url": "https://github.com/voanhhieu10250",
