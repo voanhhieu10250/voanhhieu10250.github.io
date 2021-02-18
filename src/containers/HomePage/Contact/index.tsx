@@ -41,7 +41,7 @@ const Contact: React.FC<Props | null> = ({ data }) => {
             </a>
           </div>
         </div>
-        <div className="row">
+        <div className="row" hidden={data?.fb ? false : true}>
           <div className="col-md-2 col-sm-12">
             <i className="fab fa-facebook-square"></i>
           </div>
@@ -71,7 +71,7 @@ const Contact: React.FC<Props | null> = ({ data }) => {
             </a>
           </div>
         </div>
-        <div className="row">
+        <div className="row" hidden={data?.twitter ? false : true}>
           <div className="col-md-2 col-sm-12">
             <i className="fab fa-twitter"></i>
           </div>
@@ -86,7 +86,7 @@ const Contact: React.FC<Props | null> = ({ data }) => {
             </a>
           </div>
         </div>
-        <div className="row">
+        <div className="row" hidden={data?.instag ? false : true}>
           <div className="col-md-2 col-sm-12">
             <i className="fab fa-instagram"></i>
           </div>
