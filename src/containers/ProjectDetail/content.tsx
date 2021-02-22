@@ -53,11 +53,18 @@ const Content: React.FC<Props> = ({ data }) => {
                 className={`carousel-item${index === 0 ? " active" : ""}`}
                 key={index}
               >
-                <img
-                  src={publicURL(item)}
-                  className="d-block w-100"
-                  alt="project image"
-                />
+                <a
+                  href={publicURL(item)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <img
+                    src={publicURL(item)}
+                    className="d-block w-100"
+                    alt="project image"
+                  />
+                </a>
               </div>
             ))}
           </div>

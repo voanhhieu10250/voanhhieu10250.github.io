@@ -1,5 +1,4 @@
-import { bottom } from "@popperjs/core";
-import React, { useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import { Element } from "react-scroll";
 import { ScreenContext } from "../../../App";
 import publicURL from "../../../helper/publicUrl";
@@ -65,17 +64,16 @@ const Header: React.FC<Props | null> = ({ data }) => {
               <p className="title">{data?.name}</p>
             )}
             {data?.description.map((item, index) => (
-              <>
+              <Fragment key={index}>
                 <p
                   className={`description${
                     phoneScreen && index !== 0 ? " text-start" : ""
                   }`}
-                  key={index}
                 >
                   {item}
                 </p>
                 {phoneScreen && index === 0 ? <br /> : ""}
-              </>
+              </Fragment>
             ))}
             <br />
             <p className="description">Feel free to look around!</p>
