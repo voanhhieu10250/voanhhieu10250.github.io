@@ -182,7 +182,15 @@
           "text": "This is my first big project I've ever made since I got into this industry. CyberSoft (the academy where I learnd to code) gave me some backend APIs, so I didn't have to pay much attention to the backend (but sometimes I had to use mockAPI.io for some part that did't have any API link for it). Because it is the first time I build a large website like this, by my self (only me participated in this project), it took me nearly 2 months to complete it (eat and sleep with it). I had tried lots of CSS frameworks, the more I research the more I confured because of the variety of CSS frameworks. And so far I decided to stick with SASS and Styled-Components. These two frameworks are very powerful and easy to use. Some of the most difficult parts I faced along the way is customization and responsiveness. When I finished the homepage, I realized that I hadn't checked its layout on different size screens. So I had to rebuild it all again, it's a pain in the a**. When there was only 2 days left before the deadline, I had to customize all the code that I wrote. I have to be honest with you that I sometimes don't understand the code that I had written, so after that time I noted a lot above the code that I wrote and tried to code as clear as possible."
         },
         {
+          "header": "Notice",
+          "text": "If you want to access the Admin Dashbroad so go to '/auth' then login, this is the only way you can access AdminPage, if you use admin account in '/login' it will not get you to the AdminPage. Use this admin account (you can also use this account for the Booking Page): "
+        },
+        {
           "header": "",
+          "text": "USERNAME: voanhhieu102 / PASSWORD: 123456"
+        },
+        {
+          "header": "Source Code",
           "text": "Source code (github): https://github.com/voanhhieu10250/DuAnCuoiKhoaFE52"
         },
         {
