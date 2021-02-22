@@ -179,23 +179,32 @@
       "content": [
         {
           "header": "Background",
-          "text": "This is my first big project I've ever made since I got into this industry. CyberSoft (the academy where I learnd to code) gave me some backend APIs, so I didn't have to pay much attention to the backend (but sometimes I had to use mockAPI.io for some part that did't have any API link for it). Because it is the first time I build a large website like this, by my self (only me participated in this project), it took me nearly 2 months to complete it (eat and sleep with it). I had tried lots of CSS frameworks, the more I research the more I confured because of the variety of CSS frameworks. And so far I decided to stick with SASS and Styled-Components. These two frameworks are very powerful and easy to use. Some of the most difficult parts I faced along the way is customization and responsiveness. When I finished the homepage, I realized that I hadn't checked its layout on different size screens. So I had to rebuild it all again, it's a pain in the a**. When there was only 2 days left before the deadline, I had to customize all the code that I wrote. I have to be honest with you that I sometimes don't understand the code that I had written, so after that time I noted a lot above the code that I wrote and tried to code as clear as possible."
+          "text": [
+            "This is my first big project I've ever made since I got into this industry. CyberSoft (the academy where I learnd to code) gave me some backend APIs, so I didn't have to pay much attention to the backend (but sometimes I had to use mockAPI.io for some part that did't have any API link for it). Because it is the first time I build a large website like this, by my self (only me participated in this project), it took me nearly 2 months to complete it (eat and sleep with it). I had tried lots of CSS frameworks, the more I research the more I confured because of the variety of CSS frameworks. And so far I decided to stick with SASS and Styled-Components. These two frameworks are very powerful and easy to use. Some of the most difficult parts I faced along the way is customization and responsiveness. When I finished the homepage, I realized that I hadn't checked its layout on different size screens. So I had to rebuild it all again, it's a pain in the a**. When there was only 2 days left before the deadline, I had to customize all the code that I wrote. I have to be honest with you that I sometimes don't understand the code that I had written, so after that time I noted a lot above the code that I wrote and tried to code as clear as possible."
+          ]
         },
         {
           "header": "Notice",
-          "text": "If you want to access the Admin Dashbroad so go to '/auth' then login, this is the only way you can access AdminPage, if you use admin account in '/login' it will not get you to the AdminPage. Use this admin account (you can also use this account for the Booking Page): "
+          "text": [
+            "If you want to access the Admin Dashbroad so go to '/auth' then login, this is the only way you can access AdminPage, if you use admin account in '/login' it will not get you to the AdminPage. Use this admin account (you can also use this account for the Booking Page): ",
+            "» Username: voanhhieu102",
+            "» Password: 123456"
+          ]
         },
         {
-          "header": "",
-          "text": "USERNAME: voanhhieu102 / PASSWORD: 123456"
-        },
-        {
-          "header": "Source Code",
-          "text": "Source code (github): https://github.com/voanhhieu10250/DuAnCuoiKhoaFE52"
+          "header": "Hosted at",
+          "text": [
+            "Source code (github):",
+            "» https://github.com/voanhhieu10250/DuAnCuoiKhoaFE52",
+            "Heroku deploy (it might takes a few minutes to start the server):",
+            "» https://duancuoikhoa-voanhhieu-fe52.herokuapp.com/"
+          ]
         },
         {
           "header": "Conclusion",
-          "text": "Overall, I am very proud of this project. I also really enjoyed programming in React (especially React Hooks system). With the rise of other Componies using React as well as NextJS, I will definitely use it for most of my future projects."
+          "text": [
+            "Overall, I am very proud of this project. I also really enjoyed programming in React (especially React Hooks system). With the rise of other Componies using React as well as NextJS, I will definitely use it for most of my future projects."
+          ]
         }
       ]
     },
@@ -215,26 +224,40 @@
       "content": [
         {
           "header": "",
-          "text": "This is the project for my parsonal website."
+          "text": ["This is the project for my parsonal website."]
         },
         {
           "header": "",
-          "text": "Originally, I planned to write it using just HTML/CSS/JS. But after doing some research, I realized that being able to create React applications with Typescript are very important and useful. So I learned Typescript and apply it with React to build this project."
+          "text": [
+            "Originally, I planned to write it using just HTML/CSS/JS. But after doing some research, I realized that being able to create React applications with Typescript are very important and useful. So I learned Typescript and apply it with React to build this project."
+          ]
         },
         {
           "header": "",
-          "text": "One of the challenges I faced was designing the website to be easy to navigate as well as appealing to users. Design is not something I had prior industry experience with so I had to do some research into designing user-friendly and intuitive interfaces."
+          "text": [
+            "One of the challenges I faced was designing the website to be easy to navigate as well as appealing to users. Design is not something I had prior industry experience with so I had to do some research into designing user-friendly and intuitive interfaces."
+          ]
         },
         {
           "header": "",
-          "text": "Another challenge was the overly complicated typing system of Typescript, but its benefits are very attractive once I get used to it (code completion, type checking,...). It prevents me from getting any potential errors, which is so nice. I think from now on I will use Typescript instead of Javascript for React"
+          "text": [
+            "Another challenge was the overly complicated typing system of Typescript, but its benefits are very attractive once I get used to it (code completion, type checking,...). It prevents me from getting any potential errors, which is so nice. I think from now on I will use Typescript instead of Javascript for React"
+          ]
+        },
+        {
+          "header": "Source code",
+          "text": [
+            "Github: ",
+            "» https://github.com/voanhhieu10250/voanhhieu10250.github.io",
+            "Feel free to check it out"
+          ]
         }
       ]
     },
     "realtimechatapp": {
       "source": "https://github.com/voanhhieu10250/chatapp",
       "title": "Realtime Chat App",
-      "description": "<- Realtime ChatApp, Socket.io, NodeJS, JS",
+      "description": "Realtime ChatApp, Socket.io, NodeJS, JS",
       "tech": [
         "Javascript",
         "Socket.io",
@@ -249,27 +272,37 @@
       "content": [
         {
           "header": "Background",
-          "text": "This is the first time I try Socket.io, and I pretty enjoy it. I think I will stick with it in some other projects in other to understand it better."
+          "text": [
+            "This is the first time I try Socket.io, and I pretty enjoy it. I think I will stick with it in some other projects in other to understand it better."
+          ]
         },
         {
           "header": "",
-          "text": "This app allows users to create and join multiple rooms at the same time. Anyone in the same room can see and chat to each other."
+          "text": [
+            "This app allows users to create and join multiple rooms at the same time. Anyone in the same room can see and chat to each other."
+          ]
         },
         {
           "header": "",
-          "text": "Users new join to a room won't see messages that were sent before the time they joined. Users in separate rooms cannot view each other's messages."
+          "text": [
+            "Users new join to a room won't see messages that were sent before the time they joined. Users in separate rooms cannot view each other's messages."
+          ]
         },
         {
           "header": "",
-          "text": "I do not own this css file. All these CSS of this website come from this source: 'https://gist.github.com/andrewjmead/4783dec59ba2d1e5bcf3e1c301c5858d'"
+          "text": [
+            "I do not own this css file. All these CSS of this project come mostly from this source:",
+            "» https://gist.github.com/andrewjmead/4783dec59ba2d1e5bcf3e1c301c5858d"
+          ]
         },
         {
-          "header": "",
-          "text": "This app is hosted at (it might takes a few seconds to start the heroku server): https://chatapp-voanhhieu.herokuapp.com/"
-        },
-        {
-          "header": "",
-          "text": "Source code (github): https://github.com/voanhhieu10250/chatapp"
+          "header": "Source code",
+          "text": [
+            "Source code (github):",
+            "» https://github.com/voanhhieu10250/chatapp",
+            "Heroku deploy (it might takes a few seconds to start the server):",
+            "» https://chatapp-voanhhieu.herokuapp.com/"
+          ]
         }
       ]
     }

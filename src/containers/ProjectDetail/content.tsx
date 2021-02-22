@@ -10,7 +10,7 @@ interface Props {
     pictures: string[];
     content: {
       header: string;
-      text: string;
+      text: string[];
     }[];
   } | null;
 }
@@ -100,7 +100,31 @@ const Content: React.FC<Props> = ({ data }) => {
         {data?.content.map((item, index) => (
           <Fragment key={index}>
             <h4 hidden={!item.header}>{item.header}</h4>
-            <p>{item.text}</p>
+            {item.text.map((i, idx) =>
+              i.includes("http") ? (
+                <a
+                  href={i.slice(i.indexOf("http"))}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "block",
+                    width: "fit-content",
+                    marginBottom: 5,
+                    color: "#fff",
+                    textDecoration: "none",
+                    transition: "0.15s color ease-in",
+                  }}
+                  className="source__link"
+                  key={idx}
+                >
+                  {i}
+                </a>
+              ) : (
+                <p key={idx} style={{ marginBottom: 5 }}>
+                  {i}
+                </p>
+              )
+            )}
             <br />
           </Fragment>
         ))}
